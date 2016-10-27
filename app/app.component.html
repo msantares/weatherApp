@@ -1,6 +1,6 @@
 <div class="form">
-	<input type="text" name="title" placeholder="Добавьте город" (keyup.enter)="addCity(titleInput.value); titleInput.value = ''" #titleInput>
-	<button type="button" (click)="addCity(titleInput.value); titleInput.value = ''">Добавить</button>
+	<input type="text" name="title" placeholder="Добавьте город" (keyup.enter)="addCity('&q='+titleInput.value); titleInput.value = ''" #titleInput>
+	<button type="button" (click)="addCity('&q='+titleInput.value); titleInput.value = ''">Добавить</button>
 </div>
 
 
