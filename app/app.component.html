@@ -8,11 +8,11 @@
 	<div class="list-item" *ngFor="let city of cities">
 		<br/>
 		<input type="checkbox">
-		<label>{{ city }}</label>
+		<label>{{ city.name }}</label>
 
 		<div class="list-item__weather">
-			Температура: 20 C, Ветер: 0 м/с
+			Температура: {{city.temperature}} C, ветер: {{city.windSpeed}} м/с
 		</div>
-		<button type="button" (click)="deleteCity(city);"><span>Удалить город</span></button>
+		<button type="button" (click)="deleteCity(city.name);"><span>Удалить город</span></button>
 	</div>
 </div>
